@@ -27,13 +27,9 @@ function showHideButtons() {
             next.style.visibility = "visible";
             prev.style.visibility = "visible";
         }
-        carousel.style.justifyContent = "start";
-    }
-    else {
-        carousel.style.margin = "0";
-        carousel.style.justifyContent = "center";
     }
 }
+
 window.addEventListener('resize', showHideButtons);
 onload = showHideButtons();
 
@@ -63,7 +59,7 @@ carousel.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX);
+    const walk = (x - startX) * 1.5;
     carousel.scrollLeft = scrollLeft - walk;
 });
 

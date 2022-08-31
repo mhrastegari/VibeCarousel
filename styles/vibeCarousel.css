@@ -1,47 +1,47 @@
-.container {
-    display: grid;
-    width: 800px;
-    height: 600px;
-    align-content: center;
-    justify-content: center;
+.sample-container {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
 }
 
 .main-carousel {
-    width: inherit;
-    height: inherit;
-    display: grid;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-
+  
 .items { 
-    display: flex;
-    width: inherit;
-    height: inherit;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    transition: all 0.2s;
-    will-change: transform;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-    -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+  display: flex;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-radius: 20px;
+  transition: all 0.2s;
+  will-change: transform;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  -webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 
 .items::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .items:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 .btn {
@@ -64,16 +64,16 @@
   justify-self: flex-end;
 }
 
-
 .item {
-    width: inherit;
-    height: inherit;
-    color: #fff;
-    flex: 0 0 100%;
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    scroll-snap-align: start;
-    background-color: #2653b2;
+  color: #fff;
+  display: flex;
+  flex: 0 0 100%;
+  width: inherit;
+  height: inherit;
+  font-size: 30px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  scroll-snap-align: start;
+  background-color: #2653b2;
 }
