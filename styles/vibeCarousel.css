@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .sample-container {
   width: 100%;
   display: grid;
@@ -12,6 +16,7 @@
   position: relative;
   text-align: center;
   align-items: center;
+  box-sizing: border-box;
   justify-content: center;
 }
   
@@ -27,6 +32,7 @@
   white-space: nowrap;
   border-radius: 20px;
   transition: all 0.2s;
+  box-sizing: border-box;
   will-change: transform;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -47,8 +53,7 @@
 .btn {
   z-index: 1;
   padding: 0;
-  width: 44px;
-  height: 44px;
+  width: 52px;
   margin: 0 5px;
   position: absolute;
   align-self: center;
@@ -65,7 +70,6 @@
 }
 
 .item {
-  color: #fff;
   display: flex;
   flex: 0 0 100%;
   width: inherit;
@@ -75,5 +79,5 @@
   pointer-events: none;
   justify-content: center;
   scroll-snap-align: start;
-  background-color: #2653b2;
+  scroll-snap-stop: always;
 }
